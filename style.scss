@@ -1,0 +1,25 @@
+body {
+	text-align: center;
+}
+
+.todo {
+	margin-top: 200px;
+	display: flex;
+
+	&__item {
+		margin-left: 50px;
+		padding: 20px;
+		border: 1px solid lightblue;
+		border-radius: 3px;
+	}
+}
+
+.input {
+	margin-bottom: 20px;
+}
+
+.task {
+	&__remove-btn {
+		margin-left: 10px;
+	}
+}
