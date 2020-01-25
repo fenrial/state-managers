@@ -20,6 +20,7 @@ const getTaskList = gql`
 		}
 	}
 `;
+
 export const resolvers = {
 	Mutation: {
 		addTodo: (_, { id }, { cache }) => {

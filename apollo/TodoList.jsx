@@ -34,7 +34,7 @@ const CHECK_TODO = gql`
 	}
 `;
 
-const TodoList = props => {
+const TodoList = () => {
 	const client = useApolloClient();
 	const { data } = useQuery(getAppState);
 	const [addTodo] = useMutation(ADD_TODO);
@@ -52,11 +52,9 @@ const TodoList = props => {
 				inputValue={inputValue}
 				handleChange={inputChange}
 				addTodo={() => {
-					if (inputValue) {
-						addTodo({
-							variables: { id: nanoid(5) },
-						});
-					}
+					addTodo({
+						variables: { id: nanoid(5) },
+					});
 				}}
 			/>
 			{taskList.map(task => (

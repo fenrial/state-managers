@@ -15,9 +15,7 @@ const EffectorExample = props => {
 				inputValue={inputValue}
 				handleChange={inputChange}
 				addTodo={() => {
-					if (inputValue) {
-						addTodo(inputValue);
-					}
+					addTodo(inputValue);
 				}}
 			/>
 			{taskList.map(task => (

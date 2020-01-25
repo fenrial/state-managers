@@ -840,6 +840,16 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@reatom/core@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@reatom/core/-/core-1.0.0.tgz#3ff29e1b008e302996d885a5d1dfb714d5e4f2c0"
+  integrity sha512-UqYqrp64slGUAnWYwp9ddHspEdqSswD8SkLLbU2bzPDKyNoSkvddIKTdzbW+VGx7VLc2uFJUioF8CoFiaj1yjg==
+
+"@reatom/react@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@reatom/react/-/react-1.0.0.tgz#f8825ea6edebf15addf671880ccf0e93980e3c71"
+  integrity sha512-uYAxiwHZV0kPTq7xTa/qGORGllG/q3Tn86dfhkZADAm7NW8oX6OpwMCCCmUM+aWZiqCDx6un4YLMESXU3wXB+g==
+
 "@types/node@>=6":
   version "12.12.14"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.14.tgz#1c1d6e3c75dba466e0326948d56e8bd72a1903d2"

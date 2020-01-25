@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MobxExample from './mobx/MobxExample';
-import { observer } from 'mobx-react';
 import Store from './mobx/store';
 import EffectorExample from './effector/EffectorExample';
 import ApolloExample from './apollo/ApolloExample';
-@observer
+import ReatomExample from './reatom/ReatomExample';
+
 class App extends React.Component {
 	render() {
 		return (
@@ -21,6 +21,10 @@ class App extends React.Component {
 				<div className="todo__item">
 					Apollo
 					<ApolloExample />
+				</div>
+				<div className="todo__item">
+					Reatom
+					<ReatomExample />
 				</div>
 			</div>
 		);

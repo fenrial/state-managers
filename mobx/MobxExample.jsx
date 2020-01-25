@@ -16,27 +16,21 @@ class MobxExample extends Component {
 		} = this.props.store;
 
 		return (
-			<div>
-				<div className="list">
-					<InputText
-						inputValue={inputValue}
-						handleChange={handleChange}
-						addTodo={() => {
-							if (inputValue) {
-								addTodo();
-							}
-						}}
+			<div className="list">
+				<InputText
+					inputValue={inputValue}
+					handleChange={handleChange}
+					addTodo={addTodo}
+				/>
+				{taskList.map(task => (
+					<Task
+						key={task.id}
+						task={task}
+						removeTodo={removeTodo}
+						onChange={() => (task.checked = !task.checked)}
 					/>
-					{taskList.map(task => (
-						<Task
-							key={task.id}
-							task={task}
-							removeTodo={removeTodo}
-							onChange={() => (task.checked = !task.checked)}
-						/>
-					))}
-					<span>Выполненные задачи: {completedTasks}</span>
-				</div>
+				))}
+				<span>Выполненные задачи: {completedTasks}</span>
 			</div>
 		);
 	}
